@@ -1,22 +1,9 @@
 {
-	"You are going to support": "You are going to support<br><b>{{channelName}}</b><br>with <b>{{amount}}</b> ST",
-	"You have supported": "You have supported<br><b>{{channelName}}</b><br>with <b>{{amount}}</b> ST",
-	"You have only ?? support tokens": "You have only <b>{{tokens}}</b> support tokens.",
 	"This video is videoState": "This video is {{state}}",
-	"video is exist notice": "Just so you know, this video might still be up on its <a href='{{sourceUrl}}' target='_blank'>original source</a>.<br>Do you want to download it anyways?",
-	"You are about to spend": "You are about to spend <br><b>{{downloadPrice}} DT</b><br> to purchase this video.",
 	"Right click and \"Save As...\"": "Right click and \"Save link as...\"",
-	"You have claimed": "You have claimed <b> {{ amount }} </b> tokens",
 	"loginNoticeTitle": "What is this website about? Can I use it without logging in?",
 	"loginNotice": "<p><b>Recorder.moe</b> is a project that provides live recording services designed specifically for Vtuber fans. We mainly record <b>Vtuber</b> live streams on the YouTube platform, ensuring that users never miss out on any exciting content.</p> <p>We offer a \"Recording Service\" that accepts user requests to record specific channels, allowing users to review live content at any time and never worry about missing any important moments.</p> <p>Even if you are not logged in, you can still view the channels and videos available on our platform, although certain account-related actions require login credentials.</p> <p>We only support three OAuth2 providers: Google, GitHub, and Microsoft (AAD), allowing you to easily use an existing account to log in. Information such as names and email addresses obtained from these providers is solely used for account management purposes and will never be shared or abused.</p> <p>If you have any questions about our service, please visit the <a href='/pages/faq'>FAQ</a> page for more information and contact administrators.</p>",
 	"redirect": "Redirecting...",
-	"You are going to buy": "You are going to buy<br><b>{{amount}}</b> support tokens<br>with NTD <b>${{price}}</b>",
-	"You have finished payment": "Credit card transactions are credited immediately, other transactions are subject to bank transactions.<br>Here's your transaction ID:<br>{{transactionId}}",
-	"AddChannelRules": "<ul style=\"text-align: left\"> <li>To maintain service quality, a one-time payment of 10 ST is required when adding a new channel.</li> <li>Upon submission, we will complete the review and addition process within 3 days.</li> <li>If the review does not pass, we will refund the 10 ST to you.</li> <li>If the review passes, the 10 ST will be converted into your sponsorship transaction record for the channel.</li> <li>If the review passes, it will be deemed that you have issued a monitoring commission to the system and you can download videos from this channel.</li> <li>Review criteria:</li> <ul> <li>The channel topic is \"Vtuber\".</li> <li>The channel has recorded at least 4 livestreams in the previous month. <br>(Excluding uploaded videos)</li> <li>The topic of the channel does not violate the local laws of our service infrastructure hosting location. <br>(Taiwan, Hong Kong, United States, Singapore)</li> </ul> </ul>",
 	"Channel is already exist": "Channel is already exist <a href=\"/channels/{{channel}}\">at here</a>.<br>If this is a bug, please contact the admin at Discord.",
-	"copy-referral-code": "Copy your personal referral code and share it with your friends and followers.",
-	"copy-referral-link": "You can also share this referral link, which will automatically fill in the referral code after registration.",
-	"referral-details": "Everyone you refer gets 10% discount on their first purchase of ST.<br><b>Whenever they purchase ST, you will receive a 10% reward.</b><br>There is no limit to the amount of rewards you can earn through referrals.</p>",
-	"desktop-version-only": "This form is difficult to display on a handheld screen, please switch to the desktop version to view it instead.",
 	"remove-video-notice":"Are you sure you want to delete the video?<br>The video will be removed from the server and cannot be recovered."
 }
