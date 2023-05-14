@@ -1,0 +1,47 @@
+{
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": [
+      "/assets/*.{png,jpg,gif,ico}",
+      "/*.{css,scss,js}"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/assets/*",
+      "headers": {
+        "cache-control": "public, must-revalidate, max-age=2592000"
+      }
+    },
+    {
+      "route": "/api/*",
+      "headers": {
+        "cache-control": "no-cache, no-store"
+      }
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/login/facebook",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/login/apple",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/*",
+      "headers": {
+        "cache-control": "no-cache, no-store"
+      }
+    },
+    {
+      "route": "*",
+      "headers": {
+        "cache-control": "public, must-revalidate, max-age=86400"
+      }
+    }
+  ]
+}

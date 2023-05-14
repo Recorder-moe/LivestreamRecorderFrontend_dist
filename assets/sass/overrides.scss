@@ -1,0 +1,124 @@
+// Global Overrides Template Level Only
+@import "bootstrap/scss/buttons";
+
+//------- ng-accordion -------
+.accordion {
+  .accordion-button {
+    @extend .btn,
+    .btn-link;
+  }
+
+  .accordion-body {
+    @extend .card-body;
+  }
+
+  .accordion-item {
+    // @extend .card;
+    margin: 0;
+    background-color: transparent !important;
+
+    &:not(:last-of-type) {
+      .accordion-header {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    &:last-of-type {
+      .accordion-header button {
+        padding-bottom: 0;
+      }
+
+      .accordion-body {
+        padding-bottom: 0;
+      }
+    }
+
+    .accordion-header {
+      padding: 0;
+
+      button {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: start;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+//------- horizontal timeline -------
+.cd-horizontal-timeline .events-content li {
+  transform: translateX(0);
+}
+
+
+
+//------- time picker -------
+.ngb-tp-input-container button:hover {
+  box-shadow: none;
+}
+
+
+//------- Chartist Tooltip -------
+.chartist-tooltip:not(.tooltip-show) {
+  padding: 0;
+
+  &:before {
+    border: 0;
+  }
+}
+
+// for dark and transparent layouts
+html body.layout-dark {
+
+  // Navbar search
+  .search-list {
+    background: $bg-color-dark;
+
+    .first-active-item .option {
+      background: $dl-bg-color;
+    }
+
+    .option {
+      color: $dl-text-color;
+
+      &:hover {
+        background: $dl-bg-color;
+      }
+    }
+
+    .accordion .card {
+      box-shadow: none;
+    }
+
+    &:not(.layout-transparent) {
+      .accordion .card .card-header {
+        border-color: $dl-border-color;
+      }
+    }
+
+    &.layout-transparent {
+      .accordion .card .card-header {
+        border-color: $tl-border-color;
+
+        button:not([disabled]) {
+          color: map-get($primary-color, lighten-4);
+        }
+      }
+    }
+  }
+}
+
+/** Workaround for ng-bootstrap tooltip not showing the little triangle pointer.
+ * ng-bootstrap tooltip target bootstrap 5, which use .tooltip-arrow instead of .arrow (bootstrap 4)
+ * Since we're using bootstrap 4, we need to extend the .arrow class to .tooltip-arrow
+ */
+.tooltip-arrow{
+  @extend .arrow;
+  &::before{
+    @extend .arrow, ::before;
+  }
+}
