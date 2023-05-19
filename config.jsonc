@@ -20,5 +20,8 @@
   "clientId": "",
 
   // Azure Function API endpoint (LivestreamRecorderBackend)
-  "apiUrl": ""
+  "apiUrl": "",
+
+  // Admin email, displayed in the FAQ page
+  "adminEmail": ""
 }
