@@ -12,6 +12,8 @@
 	"Success!": "成功!",
 	"Channel has been added! It'll take a while for the videos to be processed.": "頻道已新增！影片需要一段時間進行處理。",
 	"<i class=\"ft-heart-on\"></i> Great!": "<i class=\"ft-heart-on\"></i> 太棒了!",
+	"You have <b>Enabled</b> channel monitoring for <b>{{channelName}}</b>.": "已 <b>啟用</b> <b>{{channelName}}</b> 的頻道監控。",
+	"You have <b>Disabled</b> channel monitoring for <b>{{channelName}}</b>.": "已 <b>停用</b> <b>{{channelName}}</b> 的頻道監控。",
 	"Notice!": "注意!",
 	"remove-video-notice": "確定要刪除影片?<br>影片將會從伺服器上移除，且無法復原。",
 	"Got it!": "了解!",
