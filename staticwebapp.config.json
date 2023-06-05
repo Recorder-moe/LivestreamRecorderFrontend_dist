@@ -20,22 +20,8 @@
       }
     },
     {
-      "route": "/.auth/login/twitter",
-      "statusCode": 404
-    },
-    {
-      "route": "/.auth/login/facebook",
-      "statusCode": 404
-    },
-    {
-      "route": "/.auth/login/apple",
-      "statusCode": 404
-    },
-    {
       "route": "/.auth/*",
-      "headers": {
-        "cache-control": "no-cache, no-store"
-      }
+      "statusCode": 404
     },
     {
       "route": "*",

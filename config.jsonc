@@ -16,8 +16,11 @@
   // Read-only Key!!!
   "key": "",
 
-  // Google OAuth2
-  "clientId": "",
+  // OAuth2
+  "clientId_google": "",
+  "clientId_github": "",
+  "clientId_microsoft": "",
+  "clientId_discord": "",
 
   // Azure Function API endpoint (LivestreamRecorderBackend)
   "apiUrl": "",
