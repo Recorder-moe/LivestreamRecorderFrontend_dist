@@ -31,9 +31,10 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.deployment_token }}
           action: 'upload'
+          skip_app_build: true
           app_location: '/'
           api_location: ''
-          output_location: '/'
+          output_location: ''
         env:
           VERSION: ${{ github.sha }}
 
