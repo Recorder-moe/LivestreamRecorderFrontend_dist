@@ -14,6 +14,16 @@ This is the frontend distribution for the [Recorder.moe](https://recorder.moe) l
 
 - Set up github repository action secrets and follow the [github workflow](./.github/workflows/azure_static_web_apps.yml).
 
+### Hosting on GitHub Pages
+
+- Fork this repository.
+- Fill out your own settings in the [config.jsonc](./config.jsonc) file.
+- Enable GitHub Pages in the repository settings.
+- Set the GitHub Pages source to the `master` branch.
+- ***Setup Custom Domain!!!***\
+  This app cannot run at a domain like `https://username.github.io/LivestreamRecorderFrontend_dist/`.\
+  It must run at the root of the domain, like `https://your.recorder.moe/`.
+
 ### Docker image
 
 - Run this Docker image `ghcr.io/recorder-moe/livestreamrecorderfrontend`
