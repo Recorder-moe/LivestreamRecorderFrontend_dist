@@ -26,6 +26,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Write the environment variables to config.jsonc
+        run: |
+          echo '{
+            "GA_TRACKING_ID": "${{ env.NG_APP_GA_TRACKING_ID }}",
+            "blobstorage": "${{ env.NG_APP_BLOB_ENDPOINT }}",
+            "blobstorage_public": "${{ env.NG_APP_BLOB_ENDPOINT_PUBLIC }}",
+            "endpoint": "${{ env.NG_APP_COSMOS_ENDPOINT }}",
+            "key": "${{ env.NG_APP_COSMOS_KEY }}",
+            "clientId_google": "${{ env.NG_APP_GOOGLE_CLIENT_ID }}",
+            "clientId_github": "${{ env.NG_APP_GITHUB_CLIENT_ID }}",
+            "clientId_microsoft": "${{ env.NG_APP_MICROSOFT_CLIENT_ID }}",
+            "clientId_discord": "${{ env.NG_APP_DISCORD_CLIENT_ID }}",
+            "apiUrl": "${{ env.NG_APP_BACKEND_ENDPOINT }}",
+            "adminEmail": "${{ env.NG_APP_ADMIN_EMAIL }}"
+          }' > config.jsonc
+
       - name: Deploy to Azure Static Web App
         uses: azure/static-web-apps-deploy@v1
         with:
