@@ -8,8 +8,9 @@ on:
 env:
   NG_APP_BLOB_ENDPOINT: ${{ secrets.NG_APP_BLOB_ENDPOINT }}
   NG_APP_BLOB_ENDPOINT_PUBLIC: ${{ secrets.NG_APP_BLOB_ENDPOINT_PUBLIC }}
-  NG_APP_COSMOS_ENDPOINT: ${{ secrets.NG_APP_COSMOS_ENDPOINT }}
-  NG_APP_COSMOS_KEY: ${{ secrets.NG_APP_COSMOS_KEY }}
+  NG_APP_DATABASE: ${{ secrets.NG_APP_DATABASE }}
+  NG_APP_DATABASE_ENDPOINT: ${{ secrets.NG_APP_DATABASE_ENDPOINT }}
+  NG_APP_DATABASE_KEY: ${{ secrets.NG_APP_DATABASE_KEY }}
   NG_APP_GOOGLE_CLIENT_ID: ${{ secrets.NG_APP_GOOGLE_CLIENT_ID }}
   NG_APP_GITHUB_CLIENT_ID: ${{ secrets.NG_APP_GITHUB_CLIENT_ID }}
   NG_APP_MICROSOFT_CLIENT_ID: ${{ secrets.NG_APP_MICROSOFT_CLIENT_ID }}
@@ -32,8 +33,9 @@ jobs:
             "GA_TRACKING_ID": "${{ env.NG_APP_GA_TRACKING_ID }}",
             "blobstorage": "${{ env.NG_APP_BLOB_ENDPOINT }}",
             "blobstorage_public": "${{ env.NG_APP_BLOB_ENDPOINT_PUBLIC }}",
-            "endpoint": "${{ env.NG_APP_COSMOS_ENDPOINT }}",
-            "key": "${{ env.NG_APP_COSMOS_KEY }}",
+            "database": "${{ env.NG_APP_DATABASE }}",
+            "endpoint": "${{ env.NG_APP_DATABASE_ENDPOINT }}",
+            "key": "${{ env.NG_APP_DATABASE_KEY }}",
             "clientId_google": "${{ env.NG_APP_GOOGLE_CLIENT_ID }}",
             "clientId_github": "${{ env.NG_APP_GITHUB_CLIENT_ID }}",
             "clientId_microsoft": "${{ env.NG_APP_MICROSOFT_CLIENT_ID }}",
