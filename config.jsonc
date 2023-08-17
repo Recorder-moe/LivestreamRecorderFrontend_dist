@@ -10,10 +10,17 @@
   // This one is for images. (public access)
   "blobstorage_public": "",
 
-  // Azure COSMOS DB
-  // https://myaccount.documents.azure.com:443/
+  // Database Service
+  // "AzureCosmosDB" or "ApacheCouchDB"
+  "database": "ApacheCouchDB",
+
+  // Database endpoint
+  // Azure CosmosDB example: https://recordermoe.documents.azure.com:443/
+  // Apache CouchDB example: https://username:password@couchdb.recorder.moe/
+  // Be sure to use a readonly account for CouchDB!!!
   "endpoint": "",
-  // Read-only Key!!!
+
+  // Azure CosmosDB Read-only Key!!!
   "key": "",
 
   // OAuth2
