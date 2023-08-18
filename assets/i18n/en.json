@@ -7,5 +7,7 @@
 	"Channel is already exist": "Channel is already exist <a href=\"/channels/{{channel}}\">at here</a>.<br>If this is a bug, please contact the admin at Discord.",
 	"remove-video-notice":"Are you sure you want to delete the video?<br>The video will be removed from the server and cannot be recovered.",
 	"You have <b>Enabled</b> channel monitoring for <b>{{channelName}}</b>.": "You have <b>Enabled</b> channel monitoring for <b>{{channelName}}</b>.",
-	"You have <b>Disabled</b> channel monitoring for <b>{{channelName}}</b>.": "You have <b>Disabled</b> channel monitoring for <b>{{channelName}}</b>."
+	"You have <b>Disabled</b> channel monitoring for <b>{{channelName}}</b>.": "You have <b>Disabled</b> channel monitoring for <b>{{channelName}}</b>.",
+	"You have <b>Hide</b> the channel <b>{{channelName}}</b>.": "You have <b>Hide</b> the channel <b>{{channelName}}</b>.",
+	"You have <b>Unhide</b> the channel <b>{{channelName}}</b>.": "You have <b>Unhide</b> the channel <b>{{channelName}}</b>."
 }
