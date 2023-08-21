@@ -32,6 +32,9 @@
   // Azure Function API endpoint (LivestreamRecorderBackend)
   "apiUrl": "",
 
+  // Status URL
+  "statusUrl": "",
+
   // Admin email, displayed in the FAQ page
   "adminEmail": ""
 }
