@@ -26,8 +26,11 @@ This is the frontend distribution for the [Recorder.moe](https://recorder.moe) l
 
 ### Docker image
 
-- Run this Docker image `ghcr.io/recorder-moe/livestreamrecorderfrontend`
+- Run the docker image with config.jsonc mounted to `/usr/share/nginx/html/config.jsonc`.
 
-```bash
-docker run --rm -v /path/to/config.jsonc:/usr/share/nginx/html/config.jsonc:ro -p 80:80 ghcr.io/recorder-moe/livestreamrecorderfrontend
-```
+  ```bash
+  docker run -v /path/to/config.jsonc:/usr/share/nginx/html/config.jsonc:ro -p 80:8080 ghcr.io/recorder-moe/livestreamrecorderfrontend
+  ```
+
+- The Nginx server will listen on port 80, so you can access it at `http://localhost:80`.
+- Also check the `http://localhost:80/config.jsonc` to make sure the config is loaded correctly.
